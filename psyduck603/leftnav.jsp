@@ -4,18 +4,18 @@
 <nav class="d-none d-md-block bg-light sidebar">
 	<div class="sidebar-sticky">
 		<ul class="nav flex-column">
+			<li class="nav-item"><a class="nav-link text-secondary" href="index.jsp">
+					<img src="img/yico/upside_down_face.png">1.Psyduck </a></li>
 			<li class="nav-item"><a
 				class="nav-link text-secondary text-warning active" href="login.jsp"> <img
-					src="img/yico/face_savoring_food.png">1. 用户登入
+					src="img/yico/face_savoring_food.png">2. 用户登入
 			</a></li>
 			<li class="nav-item"><a class="nav-link text-secondary" href="reg.jsp">
-					<img src="img/yico/face_with_monocle.png">2.用户注册
+					<img src="img/yico/face_with_monocle.png">3.用户注册
 			</a></li>
 			<li class="nav-item"><a class="nav-link text-secondary" href="qrCode.jsp">
-					<img src="img/yico/face_with_rolling_eyes.png">3.生成二维码
+					<img src="img/yico/face_with_rolling_eyes.png">4.生成二维码
 			</a></li>
-			<li class="nav-item"><a class="nav-link text-secondary" href="#">
-					Customers </a></li>
 			<li class="nav-item"><a class="nav-link text-secondary" href="#">
 					Reports </a></li>
 			<li class="nav-item"><a class="nav-link text-info" href="#">
