@@ -34,7 +34,7 @@
 					<h3>Dear users,</h3>
 					<p class="lead">please click the button below to login to get a
 						better user experience.</p>
-					<a class="btn btn-lg btn-warning" href="login.jsp" role="button">Click
+					<a class="btn btn-lg btn-warning" href="Login" role="button">Click
 						to enter the login &raquo;</a>
 				</div>
 				

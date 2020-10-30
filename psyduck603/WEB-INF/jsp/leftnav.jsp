@@ -1,19 +1,27 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 
+<script type="text/javascript">
+	$(.nav-link).on("click",function()
+	{
+		$(.active).removeClass("active");
+	})
+</script>
+
+
 <nav class="d-none d-md-block bg-light sidebar">
 	<div class="sidebar-sticky">
 		<ul class="nav flex-column">
-			<li class="nav-item"><a class="nav-link text-secondary" href="index.jsp">
+			<li class="nav-item"><a class="nav-link ${nav_item == 'Index'?'text-warning active':'text-secondary'} " href="PsyDuck">
 					<img src="img/yico/upside_down_face.png">1.Psyduck </a></li>
 			<li class="nav-item"><a
-				class="nav-link text-secondary text-warning active" href="login.jsp"> <img
+				class="nav-link text-secondary ${nav_item == 'Login'?'text-warning active':'text-secondary'} " href="Login"> <img
 					src="img/yico/face_savoring_food.png">2. 用户登入
 			</a></li>
-			<li class="nav-item"><a class="nav-link text-secondary" href="reg.jsp">
+			<li class="nav-item"><a class="nav-link ${nav_item == 'Reg'?'text-warning active':'text-secondary'}" href="Reg">
 					<img src="img/yico/face_with_monocle.png">3.用户注册
 			</a></li>
-			<li class="nav-item"><a class="nav-link text-secondary" href="qrCode.jsp">
+			<li class="nav-item"><a class="nav-link ${nav_item == 'QrCode'?'text-warning active':'text-secondary'}" href="QrCode">
 					<img src="img/yico/face_with_rolling_eyes.png">4.生成二维码
 			</a></li>
 			<li class="nav-item"><a class="nav-link text-secondary" href="#">
