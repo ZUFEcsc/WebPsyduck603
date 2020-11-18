@@ -61,17 +61,26 @@
 							<div class="col-sm-10">
 								<div class="form-check">
 									<input class="form-check-input" type="radio" name="sexRadio"
-										id="gridRadios1" value="Boy" checked> <label
+										id="gridRadios1" value="男" checked> <label
 										class="form-check-label" for="gridRadios1">男 </label>
 								</div>
 								<div class="form-check">
 									<input class="form-check-input" type="radio" name="sexRadio"
-										id="gridRadios2" value="Girl"> <label
+										id="gridRadios2" value="女"> <label
 										class="form-check-label" for="gridRadios2">女 </label>
 								</div>
 							</div>
 						</div>
 					</fieldset>
+					
+					<!-- 出生年月 -->
+					<div class="form-group row">
+						<label for="ubirth" class="col-sm-2 col-form-label">出生年月</label>
+						<div class="col-sm-10">
+							<input type="date" name="birth" class="form-control"
+								id="ubirth" value="2000-01-01">
+						</div>
+					</div>
 
 					<!-- 选择特长信息（复选框） -->
 					<div class="form-group row">
@@ -108,10 +117,10 @@
 								<label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
 								<select class="custom-select mr-sm-2"
 									id="inlineFormCustomSelect" name="majors">
-									<option value="Computer Major" selected>计算机科学与技术</option>
-									<option value="Software Engineering">软件工程</option>
-									<option value="E-commerce Major">电子商务</option>
-									<option value="Information Major">信息管理与信息系统</option>
+									<option value="计算机科学与技术" selected>计算机科学与技术</option>
+									<option value="软件工程">软件工程</option>
+									<option value="电子商务">电子商务</option>
+									<option value="信息管理与信息系统">信息管理与信息系统</option>
 								</select>
 							</div>
 						</div>

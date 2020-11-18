@@ -18,7 +18,7 @@
 					<img src="img/yico/face_with_rolling_eyes.png">4.生成二维码
 			</a></li>
 			<li class="nav-item"><a class="nav-link  ${nav_item == 'UserList'?'text-warning active':'text-secondary'}" href="UserList">
-					用户列表 </a></li>
+					<img src="img/yico/confused_face.png">5.用户列表 </a></li>
 							
 			<li class="nav-item"><a class="nav-link text-info" href="#">
 					Integrations </a></li>

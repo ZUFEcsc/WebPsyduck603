@@ -65,7 +65,7 @@
 										<td width=30%>
 											<a href="UserInfo?id=${item.id}" class="btn btn-light"><span>查看详情</span></a>
 											<a href="UserUpdate?id=${item.id}" class="btn btn-light"><span>修改用户信息</span></a>
-											<a href="#" class="btn btn-light"><span>修改密码</span></a>									
+											<a href="UserChangePwd?id=${item.id}" class="btn btn-light"><span>修改密码</span></a>									
 										</td>
 									</tr>
 								</c:forEach>
