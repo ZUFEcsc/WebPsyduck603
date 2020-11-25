@@ -5,10 +5,11 @@
 <nav class="d-none d-md-block bg-light sidebar">
 	<div class="sidebar-sticky">
 		<ul class="nav flex-column">
-			<li class="nav-item"><a class="nav-link ${nav_item == 'Index'?'text-warning active':'text-secondary'} " href="PsyDuck">
+			<li class="nav-item">
+			<a class="nav-link ${nav_item == 'Index'?'text-warning active':'text-secondary'}" href="PsyDuck">
 					<img src="img/yico/upside_down_face.png">1.Psyduck </a></li>
-			<li class="nav-item"><a
-				class="nav-link text-secondary ${nav_item == 'Login'?'text-warning active':'text-secondary'} " href="Login"> <img
+			<li class="nav-item">
+			<a class="nav-link text-secondary ${nav_item == 'Login'?'text-warning active':'text-secondary'}" href="Login"> <img
 					src="img/yico/face_savoring_food.png">2. 用户登入
 			</a></li>
 			<li class="nav-item"><a class="nav-link ${nav_item == 'Reg'?'text-warning active':'text-secondary'}" href="Reg">
@@ -19,7 +20,8 @@
 			</a></li>
 			<li class="nav-item"><a class="nav-link  ${nav_item == 'UserList'?'text-warning active':'text-secondary'}" href="UserList">
 					<img src="img/yico/confused_face.png">5.用户列表 </a></li>
-							
+			<li class="nav-item"><a class="nav-link  ${nav_item == 'LogList'?'text-warning active':'text-secondary'}" href="LogList">
+					<img src="img/yico/confused_face.png">6.日志列表 </a></li>				
 			<li class="nav-item"><a class="nav-link text-info" href="#">
 					Integrations </a></li>
 		</ul>
