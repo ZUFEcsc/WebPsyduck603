@@ -8,6 +8,37 @@
 <%@ include file="bootstrap.jsp"%>
 
 <%@ include file="css.jsp"%>
+<style>
+	#flagcode{
+		padding:auto;
+	}
+	
+	#flagcode img{
+		width:50%;
+		height:50%;
+	}
+</style>
+
+<script type="text/javascript">
+	$(function(){
+		$("input[name='Usercode']").change(function(){
+			let Usercode = $("input[name='Usercode']").val();
+			$.post("CodeAjax",{
+				Usercode : Usercode,
+			},function(res){
+				if(res=="yes"){
+					$("#flagcode").empty();
+					$("#flagcode").append("<img src='img/yes.png'>");
+				}
+				else{
+					$("#flagcode").empty();
+					$("#flagcode").append("<img src='img/no.png'>");
+				}
+			})
+		})
+	})
+</script>
+
 <script type="text/javascript">
 	$(function() {
 		$("#regBtn").click(function() {
@@ -168,7 +199,8 @@
 						<div class="col-sm-10">
 							<input type="text" name="Usercode" class="form-control w-50"
 									id="ucode" placeholder="校验码" required="required" style="display: inline-block">
-									
+							<div id="flagcode" style="display: inline-block;width:8%;">
+							</div>
 							<img id="codeimg" alt="Code" src="ResImgServlet"
 								style="display: inline-block">
 						</div>						
