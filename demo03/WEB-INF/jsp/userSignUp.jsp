@@ -20,7 +20,7 @@
 		height:50%;
 	}
 </style>
-<title>ActivityList</title>
+<title>ActivitySignUp</title>
 </head>
 <body>
 
@@ -64,34 +64,67 @@
 
 		<!-- 主页面 -->
 		<div class="row mt-3">
-			<div class="col-sm">
+			<div class="col-sm-8">
 				<h2>${info}</h2>
-				<table class="table" style="margin: 0px;">
-							<thead>
-								<tr>
-									<th scope="col">序号</th>
-									<th scope="col">活动名称</th>
-									<th scope="col">活动时间</th>
-									<th scope="col">活动状态</th>
-									<th scope="col">操作</th>
-								</tr>
-							</thead>
-							<tbody>
-								<c:forEach items="${acts}" var="item">
-									<tr>
-										<th scope="row">${item.aid}</th>
-										<td>${item.aname}</td>
-										<td>${item.atime}</td>
-										<td>${item.astatus}</td>
-										<td width=30%>
-											<a href="${pageContext.request.contextPath}/demo03/ActStart" class="btn btn-light"><span>开始活动</span></a>
-											<a href="#" class="btn btn-light"><span>查看详情</span></a>
-											<a href="#" class="btn btn-light"><span>修改2</span></a>									
-										</td>
-									</tr>
-								</c:forEach>
-							</tbody>
-						</table>
+				<form action="${pageContext.request.contextPath}/UserSignUpServlet" method="post">
+					<input type="hidden" value="${act.aid}" name="aid">
+					<!-- 输入用户名信息 -->
+					<div class="form-group row">
+						<label for="inputEmail3" class="col-sm-3 col-form-label">活动名称</label>
+						<div class="col-sm">
+							<p>${act.aname}</p>
+						</div>
+					</div>
+
+					<!-- 活动开始时间 -->
+					<div class="form-group row">
+						<label for="atime" class="col-sm-3 col-form-label">活动开始时间</label>
+						<div class="col-sm">
+							<p>${act.atime}</p>
+						</div>
+					</div>
+					
+					<!-- 活动报名时间 -->
+					<div class="form-group row">
+						<label for="astart" class="col-sm-3 col-form-label">活动报名时间</label>
+						<div class="col-sm">
+							<p>${act.astart}</p>
+						</div>
+						----
+						<div class="col-sm">
+							<p>${act.aend}</p>
+						</div>
+					</div>
+					
+					<!-- 下拉框 -->
+					<fieldset class="form-group">
+						<div class="row">
+							<legend class="col-form-label col-sm-3 pt-0">活动所属学院</legend>
+							<div class="col-auto my-1 col-sm">
+								<select class="custom-select mr-sm-2"
+									id="inlineFormCustomSelect" name="acol">
+									<c:forEach items="${collist}" var="col">
+										<option value="${col.cname}">${col.cname}</option>
+									</c:forEach>
+								</select>
+							</div>
+						</div>
+					</fieldset>
+						
+					<!-- 输入活动内容信息 -->
+					<div class="form-group row">
+						<label for="inputPassword3" class="col-sm-3 col-form-label">活动内容</label>
+						<div class="col-sm">
+							<textarea class="form-control" name="atext" rows="3">${act.atext}</textarea>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<div class="col-sm-10">
+							<button type="submit" class="btn btn-primary">确认报名</button>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 

@@ -82,9 +82,9 @@
 										<th scope="row">${item.aid}</th>
 										<td>${item.aname}</td>
 										<td>${item.atime}</td>
-										<td>${item.astatus}</td>
+										<td>${item.atext}</td>
 										<td width=30%>
-											<a href="${pageContext.request.contextPath}/demo03/ActStart" class="btn btn-light"><span>开始活动</span></a>
+											<a href="${pageContext.request.contextPath}/UserSignUp?aid=${item.aid}" class="btn btn-light"><span>活动报名</span></a>
 											<a href="#" class="btn btn-light"><span>查看详情</span></a>
 											<a href="#" class="btn btn-light"><span>修改2</span></a>									
 										</td>
